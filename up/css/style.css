@@ -64,8 +64,19 @@ a {
   grid-template-columns: [sidebar-start] 21.6rem [sidebar-end content-start] repeat(12, [col-start] 1fr [col-end]) [contnet-end]; }
 
 .header {
-  background-color: goldenrod;
-  grid-column: sidebar-start / content-end; }
+  grid-column: sidebar-start / content-end;
+  display: grid;
+  grid-template-columns: max-content 1fr repeat(3, min-content); }
+  .header__logo {
+    height: 4rem; }
+  .header__button-icon {
+    height: 2rem;
+    width: 2rem; }
+  .header__icon {
+    height: 2.5rem;
+    width: 2.5rem; }
+  .header__photo {
+    height: 4rem; }
 
 .sidebar {
   height: 93rem;

@@ -1,4 +1,55 @@
 .header {
-  background-color: goldenrod;
   grid-column: sidebar-start / content-end;
+
+  display: grid;
+  grid-template-columns: max-content 1fr repeat(3, min-content);
+  
+
+  &__logo-box {
+
+  }
+
+  &__logo {
+    height: 4rem;
+  }
+
+  &__search {
+
+  }
+
+  &__input {
+
+  }
+
+  &__button {
+
+  }
+
+  &__button-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__bookmark-box {
+    
+  }
+
+
+  &__chat-box {
+    
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    
+  }
+
+  &__photo-box {
+
+  }
+
+  &__photo {
+    height: 4rem;
+  }
 }
