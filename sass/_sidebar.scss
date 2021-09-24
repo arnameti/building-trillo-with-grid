@@ -1,0 +1,6 @@
+.sidebar {
+  height: 93rem;
+  background-color: green;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / -1;
+}

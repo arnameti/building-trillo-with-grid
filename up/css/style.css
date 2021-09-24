@@ -53,3 +53,42 @@ li {
 
 a {
   text-decoration: none; }
+
+.container {
+  max-width: 120rem;
+  height: 100rem;
+  margin: 8rem auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 7rem repeat(4, min-content);
+  grid-template-columns: [sidebar-start] 21.6rem [sidebar-end content-start] repeat(12, [col-start] 1fr [col-end]) [contnet-end]; }
+
+.header {
+  background-color: goldenrod;
+  grid-column: sidebar-start / content-end; }
+
+.sidebar {
+  height: 93rem;
+  background-color: green;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / -1; }
+
+.gallery {
+  background-color: turquoise;
+  grid-column: content-start / content-end; }
+
+.overview {
+  background-color: indianred;
+  grid-column: content-start / content-end; }
+
+.content {
+  background-color: yellowgreen;
+  grid-column: col-start 1 / col-end 7; }
+
+.content-user {
+  background-color: teal;
+  grid-column: col-start 8 / col-end 12; }
+
+.footer {
+  background-color: skyblue;
+  grid-column: content-start / content-end; }

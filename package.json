@@ -1,0 +1,17 @@
+{
+  "name": "method-one-node-sass",
+  "version": "1.0.0",
+  "description": "The-Sass-Chapter",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/style.scss up/css/style.css -w"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "arnorameti",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
