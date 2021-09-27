@@ -53,3 +53,9 @@ li {
 
 a {
   text-decoration: none; }
+
+.container {
+  background-color: #fff;
+  max-width: 120rem;
+  height: 100rem;
+  margin: 6rem auto; }
