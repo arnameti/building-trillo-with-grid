@@ -1,2 +1,10 @@
 @import "base";
-@import "layout.scss";
+@import "layout";
+
+@import "header";
+@import "sidebar";
+@import "gallery";
+@import "overview";
+@import "content";
+@import "content-user";
+@import "footer";

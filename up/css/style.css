@@ -63,3 +63,33 @@ a {
   display: grid;
   grid-template-rows: 7rem repeat(4, min-content);
   grid-template-columns: [sidebar-start] 21.6rem [sidebar-end content-start] repeat(12, [col-start] 1fr [col-end]) [contnet-end]; }
+
+.header {
+  background-color: goldenrod;
+  grid-column: sidebar-start / content-end; }
+
+.sidebar {
+  background-color: greenyellow;
+  height: 50rem;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / -1; }
+
+.gallery {
+  background-color: hotpink;
+  grid-column: content-start / content-end; }
+
+.overview {
+  background-color: indigo;
+  grid-column: content-start / content-end; }
+
+.content {
+  background-color: goldenrod;
+  grid-column: col-start 1 / col-end 7; }
+
+.content-user {
+  background-color: gray;
+  grid-column: col-start 8 / col-end 12; }
+
+.footer {
+  background-color: firebrick;
+  grid-column: content-start / content-end; }

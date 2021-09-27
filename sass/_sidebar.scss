@@ -1,0 +1,7 @@
+.sidebar {
+  background-color: greenyellow;
+  height: 50rem; //temporär
+
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / -1;
+}
