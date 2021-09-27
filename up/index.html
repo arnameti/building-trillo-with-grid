@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="header__logo-box">
-                    <img src="../img/logo.png" alt="Header Image" class="header__logo">
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <form action="#" class="header__search">
-                    <input type="text" placeholder="Search hotels" class="header__search-input">
-                    <button type="submit" class="header__search-button">
-                        <svg class="header__search-icon">
-                            <use xlink:href="../img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
 
-                <div class="header__user-nav">
-                    <div class="header__icon-box">
-                        <svg class="header__icon">
-                            <use xlink:href="../img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span>7</span>
-                    </div>
-
-                    <div class="header__icon-box">
-                        <svg class="header__icon">
-                            <use xlink:href="../img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span>13</span>
-                    </div>
-
-                    <div class="header__user-box">  
-                        <img class="header__user-img" src="../img/user.jpg" alt="User Image">
-                        <p class="header__user-name">Jonas</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sidebar">SIDEBAR</div>
-            <div class="gallery">GALLERY</div>
-            <div class="overview">OVERVIEW</div>
-            <div class="content">CONTENT</div>
-            <div class="content-user">CONTENT-USER</div>
-            <div class="footer">FOOTER</div>
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__logo-box">
+          <img src="../img/logo.png" alt="Header Image" class="header__logo" />
         </div>
 
+        <form action="#" class="header__search">
+          <input
+            type="text"
+            placeholder="Search hotels"
+            class="header__search-input"
+          />
+          <button type="submit" class="header__search-button">
+            <svg class="header__search-icon">
+              <use xlink:href="../img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
 
-    </body>
+        <div class="header__user-nav">
+          <div class="header__icon-box">
+            <svg class="header__icon">
+              <use xlink:href="../img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span>7</span>
+          </div>
+
+          <div class="header__icon-box">
+            <svg class="header__icon">
+              <use xlink:href="../img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span>13</span>
+          </div>
+
+          <div class="header__user-box">
+            <img
+              class="header__user-img"
+              src="../img/user.jpg"
+              alt="User Image"
+            />
+            <p class="header__user-name">Jonas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar__box">
+          <svg class="sidebar__icon">
+            <use xlink:href="../img/sprite.svg#icon-home"></use>
+          </svg>
+          <p class="sidebar__desc">hotel</p>
+        </div>
+
+        <div class="sidebar__box">
+          <svg class="sidebar__icon">
+            <use xlink:href="../img/sprite.svg#icon-aircraft-take-off"></use>
+          </svg>
+          <p class="sidebar__desc">flight</p>
+        </div>
+
+        <div class="sidebar__box">
+          <svg class="sidebar__icon">
+            <use xlink:href="../img/sprite.svg#icon-key"></use>
+          </svg>
+          <p class="sidebar__desc">car rental</p>
+        </div>
+
+        <div class="sidebar__box">
+          <svg class="sidebar__icon">
+            <use xlink:href="../img/sprite.svg#icon-map"></use>
+          </svg>
+          <p class="sidebar__desc">tours</p>
+        </div>
+      </div>
+
+      <div class="gallery">GALLERY</div>
+      <div class="overview">OVERVIEW</div>
+      <div class="content">CONTENT</div>
+      <div class="content-user">CONTENT-USER</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
 </html>

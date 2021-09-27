@@ -9,7 +9,6 @@
   align-items: center;
 
   &__logo-box {
-
   }
 
   &__logo {
@@ -21,7 +20,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 
     &-input {
       width: 45%;
@@ -33,7 +32,7 @@
       background-color: var(--color-grey-light-2);
       margin-right: -4rem;
 
-      transition: all .2s;
+      transition: all 0.2s;
 
       &:focus {
         outline: none;
@@ -48,18 +47,17 @@
     &-button {
       border: none;
       margin-top: 3px;
-      background-color: var(--color-grey-light-2); 
-      transition: all .2s;
+      background-color: var(--color-grey-light-2);
+      transition: all 0.2s;
       :active {
         transform: translateY(1px);
-      } 
+      }
     }
 
     &-icon {
       height: 2rem;
       width: 2rem;
-      fill: var(--color-grey-dark-3);    
-      
+      fill: var(--color-grey-dark-3);
     }
   }
 
@@ -83,7 +81,7 @@
       width: 1.8rem;
       border-radius: 50%;
       color: #fff;
-      font-size: .75rem;
+      font-size: 0.75rem;
       background-color: var(--color-primary);
 
       position: absolute;
@@ -129,5 +127,4 @@
   &__user-name {
     font-size: 1.5rem;
   }
-
 }
