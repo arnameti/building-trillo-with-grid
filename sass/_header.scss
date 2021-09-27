@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  font-size: 1.4rem;
   height: 100%;
   grid-column: sidebar-start / content-end;
   display: grid;
@@ -17,19 +18,48 @@
   }
 
   &__search {
-
-    justify-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &-input {
+      width: 45%;
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 10rem;
+      padding: 0.7rem 2rem;
+      border: none;
+      background-color: var(--color-grey-light-2);
+      margin-right: -4rem;
 
+      transition: all .2s;
+
+      &:focus {
+        outline: none;
+        width: 53%;
+      }
+
+      &::placeholder {
+        color: var(--color-grey-dark-3);
+      }
     }
 
     &-button {
-
+      border: none;
+      margin-top: 3px;
+      background-color: var(--color-grey-light-2); 
+      transition: all .2s;
+      :active {
+        transform: translateY(1px);
+      } 
     }
 
-    &-img {
-      height: 1rem;
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-grey-dark-3);    
+      
     }
   }
 
