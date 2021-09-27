@@ -1,15 +1,12 @@
 {
-  "name": "method-one-node-sass",
+  "name": "arnor",
   "version": "1.0.0",
-  "description": "The-Sass-Chapter",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/style.scss up/css/style.css -w"
   },
-  "keywords": [
-    "sass"
-  ],
-  "author": "arnorameti",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1"

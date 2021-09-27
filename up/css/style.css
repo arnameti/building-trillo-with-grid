@@ -55,51 +55,154 @@ a {
   text-decoration: none; }
 
 .container {
+  background-color: #fff;
   max-width: 120rem;
   height: 100rem;
-  margin: 8rem auto;
-  background-color: #fff;
+  margin: 6rem auto;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
   display: grid;
   grid-template-rows: 7rem repeat(4, min-content);
   grid-template-columns: [sidebar-start] 21.6rem [sidebar-end content-start] repeat(12, [col-start] 1fr [col-end]) [contnet-end]; }
 
 .header {
+  background-color: #fff;
+  font-size: 1.4rem;
+  height: 100%;
   grid-column: sidebar-start / content-end;
   display: grid;
-  grid-template-columns: max-content 1fr repeat(3, min-content); }
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center; }
   .header__logo {
-    height: 4rem; }
-  .header__button-icon {
-    height: 2rem;
-    width: 2rem; }
+    height: 3.5rem;
+    margin-left: 1.5rem; }
+  .header__search {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .header__search-input {
+      width: 45%;
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 10rem;
+      padding: 0.7rem 2rem;
+      border: none;
+      background-color: var(--color-grey-light-2);
+      margin-right: -4rem;
+      transition: all 0.2s; }
+      .header__search-input:focus {
+        outline: none;
+        width: 53%; }
+      .header__search-input::placeholder {
+        color: var(--color-grey-dark-3); }
+    .header__search-button {
+      border: none;
+      margin-top: 3px;
+      background-color: var(--color-grey-light-2);
+      transition: all 0.2s; }
+      .header__search-button :active {
+        transform: translateY(1px); }
+    .header__search-icon {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-grey-dark-3); }
+  .header__user-nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, min-content); }
+  .header__icon-box {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 2rem; }
+    .header__icon-box > span {
+      height: 1.8rem;
+      width: 1.8rem;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 0.75rem;
+      background-color: var(--color-primary);
+      position: absolute;
+      top: 1.5rem;
+      left: 3.5rem;
+      display: grid;
+      justify-content: center;
+      align-items: center; }
+    .header__icon-box:hover {
+      background-color: var(--color-grey-light-3); }
   .header__icon {
     height: 2.5rem;
-    width: 2.5rem; }
-  .header__photo {
-    height: 4rem; }
+    width: 2.5rem;
+    fill: var(--color-grey-dark-2); }
+  .header__user-box {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    align-items: center;
+    grid-column-gap: 1rem;
+    padding: 0 1.5rem;
+    height: 100%; }
+    .header__user-box:hover {
+      background-color: var(--color-grey-light-3); }
+  .header__user-img {
+    height: 4rem;
+    border-radius: 50%; }
+  .header__user-name {
+    font-size: 1.5rem; }
 
 .sidebar {
+  background-color: var(--color-grey-dark-1);
   height: 93rem;
-  background-color: green;
+  padding-top: 2.5rem;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 2 / -1; }
+  .sidebar__box {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 2.5rem;
+    align-items: center;
+    padding: 1.7rem 0 1.7rem 3rem;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 2; }
+    .sidebar__box:hover::after {
+      transform: scaleY(1);
+      width: 100%; }
+    .sidebar__box::after {
+      content: "";
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary-light);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+      transition: transform .2s, width .2s .2s;
+      z-index: -1; }
+  .sidebar__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #fff; }
+  .sidebar__desc {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff; }
 
 .gallery {
-  background-color: turquoise;
+  background-color: hotpink;
   grid-column: content-start / content-end; }
 
 .overview {
-  background-color: indianred;
+  background-color: indigo;
   grid-column: content-start / content-end; }
 
 .content {
-  background-color: yellowgreen;
+  background-color: goldenrod;
   grid-column: col-start 1 / col-end 7; }
 
 .content-user {
-  background-color: teal;
+  background-color: gray;
   grid-column: col-start 8 / col-end 12; }
 
 .footer {
-  background-color: skyblue;
+  background-color: firebrick;
   grid-column: content-start / content-end; }

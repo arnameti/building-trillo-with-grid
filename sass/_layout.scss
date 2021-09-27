@@ -1,8 +1,10 @@
 .container {
+  background-color: #fff;
   max-width: 120rem;
   height: 100rem;
-  margin: 8rem auto;
-  background-color: #fff;
+  margin: 6rem auto;
+
+  box-shadow:  10px 10px 15px rgba(0, 0, 0, 0.35);
 
   display: grid;
   grid-template-rows: 7rem repeat(4, min-content);
