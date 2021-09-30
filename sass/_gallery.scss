@@ -1,4 +1,17 @@
 .gallery {
-  background-color:hotpink;
   grid-column: content-start / content-end;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__box {
+  
+  }
+
+  &__img  {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
