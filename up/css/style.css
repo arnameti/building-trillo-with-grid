@@ -196,7 +196,6 @@ a {
     object-fit: cover; }
 
 .overview {
-  background-color: indigo;
   grid-column: content-start / content-end; }
 
 .content {
