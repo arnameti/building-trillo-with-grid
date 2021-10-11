@@ -26,6 +26,8 @@
     grid-template-columns: repeat(2, max-content);
     grid-row-gap: 1rem;
     grid-column-gap: 5rem;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    padding-bottom: 3rem;
   }
 
   &__list-item {
@@ -50,6 +52,34 @@
       mask-image: url(../../img/svg/chevron-thin-right.svg);
       mask-repeat: no-repeat;
       mask-size: cover;
+    }
+  }
+
+  &__recommend {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 1.5rem;
+    padding-top: 3rem;
+    align-items: center;
+  }
+
+  &__recommend-count {
+
+  }
+
+  &__recommend-friends {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  &__recommend-pic {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 3px solid #fff;
+    
+    &:not(:last-child) {
+      margin-right: -1.5rem;
     }
   }
 }
