@@ -232,8 +232,37 @@ a {
     font-size: 2rem; }
 
 .content {
-  background-color: goldenrod;
-  grid-column: col-start 1 / col-end 7; }
+  grid-column: col-start 1 / col-end 7;
+  font-size: 1.4rem;
+  background-color: var(--color-grey-light-2);
+  padding: 3rem; }
+  .content__box {
+    background-color: #fff;
+    padding: 2.5rem; }
+  .content__text {
+    display: grid;
+    grid-row-gap: 2rem;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    padding-bottom: 3rem; }
+  .content__list {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem; }
+  .content__list-item::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../../img/svg/chevron-thin-right.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: url(../../img/svg/chevron-thin-right.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover; }
 
 .content-user {
   background-color: gray;
