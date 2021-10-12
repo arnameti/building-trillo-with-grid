@@ -232,13 +232,13 @@ a {
     font-size: 2rem; }
 
 .content {
-  grid-column: col-start 1 / col-end 7;
+  grid-column: col-start 1 / col-end 8;
   font-size: 1.4rem;
   background-color: var(--color-grey-light-2);
-  padding: 3rem; }
+  padding: 3rem 1.5rem 3rem 3rem; }
   .content__box {
     background-color: #fff;
-    padding: 2.5rem; }
+    padding: 4rem; }
   .content__text {
     display: grid;
     grid-row-gap: 2rem;
@@ -267,7 +267,7 @@ a {
     mask-size: cover; }
   .content__recommend {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 1fr max-content;
     grid-column-gap: 1.5rem;
     padding-top: 3rem;
     align-items: center; }
@@ -276,15 +276,57 @@ a {
     grid-auto-flow: column; }
   .content__recommend-pic {
     border-radius: 50%;
-    height: 4.5rem;
-    width: 4.5rem;
+    width: 5rem;
     border: 3px solid #fff; }
     .content__recommend-pic:not(:last-child) {
       margin-right: -1.5rem; }
 
-.content-user {
-  background-color: gray;
-  grid-column: col-start 8 / col-end 12; }
+.reviews {
+  background-color: var(--color-grey-light-2);
+  grid-column: col-start 9 / col-end 12;
+  padding: 3rem 3rem 3rem 1.5rem;
+  font-size: 1.4rem; }
+  .reviews__box {
+    background-color: #fff;
+    padding: 3rem; }
+    .reviews__box:not(:last-child) {
+      margin-bottom: 3.5rem; }
+  .reviews__text {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10; }
+  .reviews__user-box {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    position: relative; }
+    .reviews__user-box::before {
+      content: "\201C";
+      position: absolute;
+      top: -15rem;
+      left: -3rem;
+      line-height: 1;
+      font-size: 20rem;
+      color: var(--color-grey-light-2);
+      font-family: sans-serif;
+      z-index: 1; }
+  .reviews__user-photo {
+    border-radius: 50%;
+    width: 5rem; }
+  .reviews__user-desc {
+    margin-left: 2rem; }
+  .reviews__user-name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem; }
+  .reviews__user-date {
+    font-size: 1rem; }
+  .reviews__raiting {
+    font-size: 2.2rem;
+    color: var(--color-primary); }
+  .reviews__show-all {
+    margin-top: 10rem; }
 
 .footer {
   background-color: firebrick;

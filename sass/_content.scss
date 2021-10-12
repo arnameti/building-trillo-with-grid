@@ -1,13 +1,13 @@
 .content {
-  grid-column: col-start 1 / col-end 7;
+  grid-column: col-start 1 / col-end 8;
   font-size: 1.4rem;
 
   background-color: var(--color-grey-light-2);
-  padding: 3rem;
+  padding: 3rem 1.5rem 3rem 3rem;
 
   &__box {
     background-color: #fff;
-    padding: 2.5rem;
+    padding: 4rem;
   }
 
   &__text {
@@ -57,7 +57,7 @@
 
   &__recommend {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 1fr max-content;
     grid-column-gap: 1.5rem;
     padding-top: 3rem;
     align-items: center;
@@ -74,8 +74,7 @@
 
   &__recommend-pic {
     border-radius: 50%;
-    height: 4.5rem;
-    width: 4.5rem;
+    width: 5rem;
     border: 3px solid #fff;
     
     &:not(:last-child) {

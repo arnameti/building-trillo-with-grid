@@ -1,0 +1,69 @@
+.reviews {
+  background-color: var(--color-grey-light-2);
+  grid-column: col-start 9 / col-end 12;
+  padding: 3rem 3rem 3rem 1.5rem;
+  font-size: 1.4rem;
+
+  &__box {
+    background-color: #fff;
+    padding: 3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__user-box {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -15rem;
+      left: -3rem;
+      line-height: 1;
+      font-size: 20rem;
+      color: var(--color-grey-light-2);
+      font-family: sans-serif;
+      z-index: 1;
+    }
+  }
+
+  &__user-photo {
+    border-radius: 50%;
+    width: 5rem;
+  }
+
+  &__user-desc {
+    margin-left: 2rem;
+  }
+
+  &__user-name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+  }
+
+  &__raiting {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+  }
+
+  &__show-all {
+    margin-top: 10rem;
+  }
+}
